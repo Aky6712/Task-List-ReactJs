@@ -24,6 +24,12 @@ export const AddNewTask = ({ tasks, setTasks,setShow,editingTask,setEditingTask}
 
   const submitHandler = (e) => {
     e.preventDefault();
+    const isDuplicate = tasks.some(task => task.title.toLowerCase() === title.toLowerCase());
+    if (isDuplicate) {
+      alert("A task with this title already exists.");
+      return;
+    }
+
     if (editingTask) {
       const updatedTasks = tasks.map((task, index) =>
         index === editingTask.index

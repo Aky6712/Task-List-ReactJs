@@ -52,7 +52,7 @@ export const Home = () => {
   return (
     <div className="App">
       <div className="task-list-header">
-        <div className="task-list-title">Task List View</div>
+        <div className="task-list-title"><i class="fa-regular fa-folder-open"></i>Task List View</div>
       </div>
 
       <div className="container">

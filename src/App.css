@@ -25,10 +25,14 @@ body {
     padding: 15px;
     background-color: #05675F;
     color: white;
-    width: 120px ;
+    width: 150px ;
     margin-top: 20px;
     margin-left: 17%;
     border-radius: 10px 10px 0px 0px ;
+}
+
+.task-list-header i{
+    padding-right: 10px;
 }
 
 .task-list-title {
@@ -63,10 +67,10 @@ body {
     border: 1px solid #05675F;
 }
 
-
-
-
-
+/* for task title up down icon fontawesome */
+.hidden {
+    display: none;
+  }
 
 .done-button{
     background-color: #05675F;
@@ -208,6 +212,15 @@ button{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.task-title {
+    text-transform: capitalize;
+  }
+  
+
+.task-titles .hidden {
+    display: none;
+  }
+
 .task-info {
     display: flex;
     flex-direction: column;
